@@ -11,15 +11,9 @@
 		<script type="text/javascript" src="js/datepicker-pt-BR.js"></script>	
 		<script type="text/javascript" src="js/monthly.js"></script>
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="css/styleIndex.css" rel="stylesheet" type="text/css">	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
-		<link rel="stylesheet" href="css/styles.css">
+		<link href="css/styleIndex.css" rel="stylesheet" type="text/css">
 		<link href="css/cssIndex.css" rel="stylesheet" type="text/css">
 		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
-		<link href="fullcalendar-3.0.1/fullcalendar.css" rel="stylesheet" type="text/css">
-		<script src="fullcalendar-3.0.1/lib/moment.min.js"></script>
-		<script src="fullcalendar-3.0.1/fullcalendar.js"></script>
-		<script src='fullcalendar/locale/pt-br.js'></script>
 		<script type="text/javascript" src="js/meuscript.js"></script>
   </head>
   
@@ -31,11 +25,11 @@
             <img src="imgs/logo.png" alt="logo" height="100px" width="120px">
           </div>
           <div class="col-md-10 text-center">
-            <h1>Sistema de Assistência Social</h1>
-            <p>Gerenciamento</p>
+            <h1>SISTEMA DE ASSISTÊNCIA SOCIAL</h1>
+            <p>Gerenciamento de Estoque, Membros, Eventos e Usuários</p>
           </div>
           <div class="col-md-1">
-            <a href="perfil.html"><i class="fa fa-4x fa-fw fa-user text-inverse"></i></a>
+            <a href="perfil.php"><i class="fa fa-4x fa-fw fa-user text-inverse"></i></a>
             <h5 class="text-center">PERFIL</h5>
           </div>
         </div>
@@ -50,68 +44,61 @@
                 <a href="#"><i class="fa fa-4x fa-align-justify fa-fw text-primary"></i></a>
               </div>
               <div class="col-md-9" id="buttons">
-                <a class="btn btn-block btn-default btn-lg" href="telaPrincipal.html">Tela Principal</a>
+                <a class="btn btn-block btn-default btn-lg" href="telaPrincipal.php">Tela Principal</a>
               </div>
             </div>
+<br>
             <div class="row">
               <div class="col-md-3 text-center">
                 <a href="#"><i class="fa fa-4x fa-fw text-primary fa-dropbox"></i></a>
               </div>
               <div class="col-md-9" id="buttons">
-                <a class="btn btn-block btn-default btn-lg" href="realizarDoacao.html">Realizar Doação</a>
-                <a class="btn btn-block btn-default btn-lg" href="listarDoacoes.html">Listar Doações Realizadas<br></a>
-                <a class="btn btn-block btn-default btn-lg" href="receberDoacao.html">Receber Arrecadação</a>
-                <a class="btn btn-block btn-default btn-lg" href="listarEstoque.html">Listar Produtos em Estoque<br></a>
+                <a class="btn btn-block btn-default btn-lg" href="inserirEstoque.php">Inserir Doação/Arrecadação</a>
+                <a class="btn btn-block btn-default btn-lg" href="listarDoacoes.php">Listar Doações<br></a>
+                <a class="btn btn-block btn-default btn-lg" href="produto.php">Controle de Produtos<br></a>
               </div>
             </div>
+<br>
             <div class="row">
               <div class="col-md-3 text-center">
                 <a href="#"><i class="fa fa-4x fa-child fa-fw text-primary"></i></a>
               </div>
               <div class="col-md-9" id="buttons">
-                <a class="btn btn-block btn-default btn-lg" href="inserirUsuario.html">Inserir Usuario</a>
-                <a class="btn btn-block btn-default btn-lg" href="listarUsuarios.html">Listar Usuarios<br></a>
-                <a class="btn btn-block btn-default btn-lg" href="listarAssistidos.html">Listar Assistidos<br></a>
-                <a class="btn btn-block btn-default btn-lg" href="listarDoadores.html">Listar Doadores</a>
+                <a class="btn btn-block btn-default btn-lg" href="inserirUsuario.php">Inserir Usuario</a>
+                <a class="btn btn-block btn-default btn-lg" href="inserirMembro.php">Inserir Membro<br></a>
               </div>
             </div>
+<br>
             <div class="row">
               <div class="col-md-3">
-                <a href="telaPrincipal.html"><i class="fa fa-4x fa-dollar fa-fw text-primary"></i></a>
+                <a href="telaPrincipal.php"><i class="fa fa-4x fa-dollar fa-fw text-primary"></i></a>
               </div>
               <div class="col-md-9">
                 <div class="row">
                   <div class="col-md-12">
-                    <a class="btn btn-block btn-default btn-lg" href="arrecadarDinheiro.html">Arrecadar Dinheiro</a>
-                    <a class="btn btn-block btn-default btn-lg" href="retirarDinheiro.html">Retirar Dinheiro</a>
-                    <a class="btn btn-block btn-default btn-lg" href="listarDinheiro.html">Listar Economias</a>
+                    <a class="btn btn-block btn-default btn-lg" href="arrecadarDinheiro.php">Arrecadar Dinheiro</a>
+                    <a class="btn btn-block btn-default btn-lg" href="retirarDinheiro.php">Retirar Dinheiro</a>
+                    <a class="btn btn-block btn-default btn-lg" href="listarDinheiro.php">Listar Economias</a>
                   </div>
                 </div>
               </div>
             </div>
+<br>
             <div class="row">
               <div class="col-md-3 text-center">
                 <a href="#"><i class="fa fa-4x fa-fw text-primary fa-area-chart"></i></a>
               </div>
               <div class="col-md-9" id="buttons">
-                <a class="btn btn-block btn-default btn-lg" href="arrecadacoes.html">Relatório de Entradas</a>
-                <a class="btn btn-block btn-default btn-lg" href="doacoes.html">Relatório de Saídas<br></a>
+                <a class="btn btn-block btn-default btn-lg" href="arrecadacoes.php">Relatório de Entradas</a>
+                <a class="btn btn-block btn-default btn-lg" href="doacoes.php">Relatório de Saídas<br></a>
               </div>
             </div>
           </div>
-		  <div id="conteudo">
+          <div class="col-md-8" id="conteudo"></div>
 
-				<div class="container row">
+        </div>
+      </div>
+    </div>
+  
 
-					<div class="calendar col-md-8">
-
-						
-					</div>
-
-				</div> <!-- end container -->
-			  </div>
-			</div>
-		</div>
-	  </div>
-	</body>
-</html>
+</body></html>

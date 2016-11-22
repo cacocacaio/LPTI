@@ -7,24 +7,6 @@ $(document).ready(function(e){
 		$('#conteudo').load(href + ' #conteudo > *', function(){
 			
 			$("#data").datepicker({ maxDate: new Date() });
-	
-			$('.calendar').fullCalendar({
-				
-				customButtons: {
-					add_evento: {
-						text: 'Adicionar Evento',
-						click: function() { alert('Não! Sua Piranha'); }
-					}
-				},
-				header: {
-					left: 'title',
-					center: 'add_evento',
-					right: 'today prev,next'
-				},
-				
-				handleWindowResize: true,
-				fixedWeekCount: false
-			});
 		});
 	});
 	
@@ -45,24 +27,6 @@ $(document).ready(function(e){
 			$('.col-md-9').hide();
 		}
 	);
-	
-	$('.calendar').fullCalendar({
-		
-		customButtons: {
-			add_evento: {
-				text: 'Adicionar Evento',
-				click: function() { alert('Não! Sua Piranha'); }
-			}
-		},
-		header: {
-			left: 'title',
-			center: 'add_evento',
-			right: 'today prev,next'
-		},
-		
-		handleWindowResize: true,
-		fixedWeekCount: false
-	});
 });
 
 function verificaDoacao(){
