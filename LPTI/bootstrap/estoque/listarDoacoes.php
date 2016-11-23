@@ -33,18 +33,18 @@ $doacao = json_decode($data);
 				  </thead>
 				  <tbody>
 					<?php foreach($doacao as $lista){ ?>
-											<tr>
-													<td><?php echo $lista->produto ?></td>
-													<td><?php echo $lista->quantidade ?></td>
-													<td><?php echo $lista->assistido ?></td>
-													<td><?php echo $lista->data ?></td>
-													<td>Responsável</td>
-													<td>
-															<a href="../delete.php?id=<?php echo "estoque/deletar/".$lista->id ?>" onclick="return confirm('Deseja realmente excluir esse registro?') ;"> Excluir</a>
-															<a href="editarEstoque.php?id=<?php echo $lista->id ?>"> Editar</a>
-													</td>
-											</tr>
-									<?php }; ?>
+						<tr>
+							<td><?php echo $lista->produto ?></td>
+							<td><?php echo $lista->quantidade ?></td>
+							<td><?php echo $lista->assistido ?></td>
+							<td><?php echo $lista->data ?></td>
+							<td>Responsável</td>
+							<td>
+									<a href="../delete.php?id=<?php echo "estoque/deletar/".$lista->id ?>" onclick="return confirm('Deseja realmente excluir esse registro?') ;"> Excluir</a>
+									<a href="editarEstoque.php?id=<?php echo $lista->id ?>"> Editar</a>
+							</td>
+						</tr>
+					<?php }; ?>
 				  </tbody>
 				</table>
 			  </div>
